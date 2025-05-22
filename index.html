@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Buscador de Películas</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-content">
+                <div class="logo">
+                    🎬 <span>Buscador de Películas</span>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="views/favoritos.html">Favoritos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <h1>🎬 Buscador de Películas</h1>
+
+            <section class="search-bar">
+                <input type="text" id="searchInput" placeholder="Escribe un título de película..."/><!--input que va a guardar el nombre de la pelicula-->
+                <select name="select" id="tipo">
+                    <option value="" selected>Selecciona una opción</option>
+                    <option value="movie">Película</option>
+                    <option value="series">Serie</option>
+                </select>
+                <button id="searchButton">Buscar</button><!--Boton que va a ejecutar el api-->
+            </section>
+
+            <!-- Mensajes temporales -->
+            <div id="mensaje"></div>
+
+            <!-- Aquí se mostrarán las películas -->
+            <section id="results" class="results"></section>
+
+            <div class="paginacion oculto">
+                <button id="anterior">⬅️ Anterior</button>
+                <span id="paginaActual">Página <span class="nPagina"></span> De <span class="totPaginas">10</span></span>
+                <button id="siguiente">Siguiente ➡️</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Juan Sebastián Serrano</p>
+        </footer>
+        <template id="template-pelicula">
+            <div class="movie-card">
+                <strong>Título:</strong> <span class="titulo"></span> <br>
+                <strong>Año:</strong> <span class="anio"></span> <br>
+                <img class="poster" src="" alt="" />
+                <br>
+                <button class="btn-fav" data-id="" data-title="" data-year="" data-poster="">⭐ Agregar a favoritos</button>
+            </div>
+        </template>
+
+    <script src="js/script.js"></script>
+    </body>
+</html>

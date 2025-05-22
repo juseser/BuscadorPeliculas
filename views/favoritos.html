@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Películas favoritas</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <div class="logo">
+        🎬 <span>Buscador de Películas</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="#">Favoritos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>⭐ Mis Favoritos</h1>
+    <input type="text" id="buscadorFavoritos" placeholder="Buscar por título..." />
+    <!-- Mensajes temporales -->
+    <div id="mensaje"></div>
+    <section id="favoritos" class="results"></section>
+  </main>
+
+  <div id="pagination-container"></div>
+    
+    <template id="template-favorito">
+    <div class="movie-card">
+      <strong>Título:</strong> <span class="titulo"></span><br>
+      <strong>Año:</strong> <span class="anio"></span><br>
+      <img class="poster" src="" alt="" />
+      <button class="btn-remove" data-id="">🗑️ Eliminar de favoritos</button>
+    </div>
+  </template>
+
+  <script src="../js/favoritos.js"></script>
+</body>
+</html>
