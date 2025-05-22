@@ -1,4 +1,4 @@
-# 🎬 MovieFinder
+# 🎬 BuscadorPeliculas
 
 Aplicación web desarrollada con JavaScript que permite buscar películas o series utilizando la API pública de OMDb. También incluye una sección de favoritos persistente con `localStorage`, paginación dinámica y una interfaz amigable.
 
