@@ -403,3 +403,82 @@ footer {
   background-color: #e6b800;
 }
 
+@media screen and (max-width: 768px) {
+  /* Contenedor general */
+  .container {
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Encabezado */
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* Título */
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  /* Buscador */
+  .search-bar {
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    height: 42px; /* altura reducida y equilibrada */
+    box-sizing: border-box;
+  }
+
+  .search-bar select,
+  .search-bar button {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 42px;
+    box-sizing: border-box;
+  }
+
+
+  /* Tarjetas */
+  .movie-card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Paginación */
+  .paginacion {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #pagination-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
